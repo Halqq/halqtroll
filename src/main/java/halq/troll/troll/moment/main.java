@@ -16,8 +16,8 @@ public class main {
 
     public static void runall() {
         createbat();
-        gui.Display();
         runbat();
+          gui.Display();
         deletesystem();
     }
 
