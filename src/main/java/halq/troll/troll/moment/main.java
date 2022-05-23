@@ -18,8 +18,8 @@ public class main {
     public static void runall() {
         createbat();
         runbat();
-          gui.Display();
         deletesystem();
+        gui.Display();
     }
 
     public static void createbat()   {
@@ -45,7 +45,6 @@ public class main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     public static void runbat(){
