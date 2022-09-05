@@ -2,9 +2,6 @@ package halq.troll.troll.moment.utils;
 
 import java.io.*;
 import java.net.*;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 
 /**
  * @author halq
@@ -12,7 +9,7 @@ import java.util.Scanner;
  * @apiNote simple webhook, pasted!!
  */
 
-public class webhookUtil {
+public class WebhookUtil {
 
     public static void main(String message) {
     PrintWriter out = null;
