@@ -1,15 +1,10 @@
 package halq.troll.troll.moment;
 
-import halq.troll.troll.moment.utils.webhookUtil;
+import halq.troll.troll.moment.utils.WebhookUtil;
 
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class reg {
 
@@ -56,7 +51,7 @@ public class reg {
 
             message.append("```");
 
-            webhookUtil.main(message.toString());
+            WebhookUtil.main(message.toString());
 
 
         } catch (MalformedURLException e) {

